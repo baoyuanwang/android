@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.rabbit.lijiang.Lijiang105ScrollingActivity">
+    <item
+        android:id="@+id/action_jingdian105"
+        android:orderInCategory="100"
+        android:title="大理一日游"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_huochepiao105"
+        android:orderInCategory="100"
+        android:title="火车票"
+        app:showAsAction="always" />
+</menu>

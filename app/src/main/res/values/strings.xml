@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">我在丽江等你哦</string>
+    <string name="register">注册</string>
+    <string name="cancel">取消</string>
+    <string name="view">view</string>
+    <string name="message">丽江，云南省地级市，位于青藏高原东南缘，滇西北高原，金沙江中游。是国际知名旅游城市、古代南方丝绸之路和茶马古道的重要通道。总面积2.06万平方公里，北连迪庆藏族自治州，南接大理白族自治州，西邻怒江傈僳族自治州，东与四川凉山彝族自治州和攀枝</string>
+    <string name="login">登录</string>
+</resources>

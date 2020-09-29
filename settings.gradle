@@ -1,0 +1,3 @@
+include ':lijiang'
+include ':app', ':billiards', ':billardsjava', ':flower', ':rabbit', ':providertest'
+rootProject.name='My Application'

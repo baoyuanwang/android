@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".lijiang.Lijiang102ScrollingActivity"
+    tools:showIn="@layout/activity_lijiang102_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_10_2_toJingdian"
+                android:layout_width="wrap_content"
+                android:text="石林行程"
+
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_10_2_toHuochepiao"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="火车票"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_10_2_toHotel"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="酒店"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <WebView
+            android:id="@+id/webView_102"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/imageView_huochepiao10_2"
+            android:layout_width="match_parent"
+            android:src="@drawable/huochepiao10_2"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

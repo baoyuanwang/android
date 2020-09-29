@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rabbit">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AdaptiveCardActivity"></activity>
+        <activity android:name=".network.NetworkTestActivity" />
+        <activity
+            android:name=".lijiang.Lijiang106ScrollingActivity"
+            android:label="@string/title_activity_lijiang106_scrolling"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".lijiang.Lijiang105ScrollingActivity"
+            android:label="@string/title_activity_lijiang105_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".lijiang.Lijiang104ScrollingActivity"
+            android:label="@string/title_activity_lijiang104_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".lijiang.Lijiang103ScrollingActivity"
+            android:label="@string/title_activity_lijiang103_scrolling"
+            android:parentActivityName=".lijiang.LijiangActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".lijiang.Lijiang101ScrollingActivity"
+            android:label="@string/title_activity_lijiang101_scrolling"
+            android:parentActivityName=".lijiang.LijiangActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".lijiang.Lijiang102ScrollingActivity"
+            android:label="@string/title_activity_lijiang102_scrolling"
+            android:parentActivityName=".lijiang.LijiangActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".lijiang.Lijiang930Activity"
+            android:label="9月30日行程"
+            android:parentActivityName=".lijiang.LijiangActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".lijiang.LijiangActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".webview.WebviewActivity" />
+        <activity android:name=".sqlLitedatabase.SQLiteDBActivity" />
+        <activity android:name=".phonecall.PhoneCallActivity" />
+        <activity
+            android:name=".audioplayer.SurfaceViewActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".audioplayer.VideoViewActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".audioplayer.AudioPlayerActivity" />
+
+        <receiver
+            android:name=".broadcastreciver.MyLocalReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
+                <action android:name="zuckerberg" />
+                <action android:name="com.example.broadcast.MY_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcastreciver.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="WifiManager.WIFI_STATE_CHANGED_ACTION" />
+                <action android:name="zuckerberg" />
+                <action android:name="mayun" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".broadcastreciver.BroadcastActivity" />
+        <activity
+            android:name=".handler.FindDifferentActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".handler.HandlerActivity" />
+        <activity android:name=".contentprovider.ContactReaderActivity" />
+
+        <provider
+            android:name=".contentprovider.MyContentProvider"
+            android:authorities="com.example.rabbit.contentprovider"
+            android:enabled="true"
+            android:exported="true" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.rabbit.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".service.boundservice.DoubleColorBallActivity" />
+
+        <service
+            android:name=".service.boundservice.BoundService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".recyclerview.RecyclerActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".MusicActivity" />
+
+        <service
+            android:name=".service.MusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ChatContactActivity"
+            android:label="微信联系人" />
+        <activity
+            android:name=".HeadIconActivity"
+            android:label="微信头像" />
+        <activity
+            android:name=".ChatMsgActivity"
+            android:label="聊天消息"
+            android:parentActivityName=".ChatActivity" />
+        <activity
+            android:name=".ProgressBarActivity"
+            android:label="进度条测试" />
+        <activity
+            android:name=".ChatActivity"
+            android:label="微信聊天">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".FragmentActivity"
+            android:label="@string/title_activity_fragment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LeanerActivity"
+            android:label="@string/title_activity_leaner"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".RelativeActivity"
+            android:label="@string/title_activity_relative"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="欢迎使用Rabbit程序">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

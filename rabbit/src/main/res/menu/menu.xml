@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/list_view" android:title="ListView 效果"
+        />
+    <item android:id="@+id/grid_view" android:title="Gridview 效果"
+        />
+    <item android:id="@+id/stagger_view" android:title="瀑布流效果"
+        />
+
+</menu>

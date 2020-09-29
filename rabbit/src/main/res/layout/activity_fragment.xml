@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@mipmap/rabbit"
+    android:foregroundGravity="right|bottom"
+    tools:context=".FragmentActivity">
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:id="@+id/text1"
+        android:background="#0000FF"
+        android:text="蓝色背景的TEXT VIEW"
+        android:textColor="#FFFFFF"
+        ></TextView>
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:id="@+id/text2"
+        android:background="#0077FF"
+        android:text="黄色背景的TEXT VIEW"
+        android:textColor="#FFFFFF"
+        ></TextView>
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:id="@+id/text3"
+        android:background="#00B4FF"
+        android:text="水蓝色背景的TEXT VIEW"
+        android:textColor="#FFFFFF"
+        ></TextView>
+</FrameLayout>

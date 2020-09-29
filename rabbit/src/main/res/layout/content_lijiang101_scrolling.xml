@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".lijiang.Lijiang101ScrollingActivity"
+    tools:showIn="@layout/activity_lijiang101_scrolling">
+    <LinearLayout
+        android:id="@+id/linearLayout101"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView101_1"
+            android:layout_width="match_parent"
+            android:layout_height="312dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/zhangjiajie_01" />
+        <TextView
+            android:id="@+id/textview101"
+            android:text="机票信息"
+            android:layout_width="match_parent"
+
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView101_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="zhangjiajieDocsClick"
+            android:scaleType="fitXY"
+            android:src="@drawable/zhangjiajie_04" />
+
+        <ImageView
+            android:id="@+id/imageView101_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="zhangjiajieDocsClick"
+            android:scaleType="fitXY"
+            android:src="@drawable/hotel_101_2" />
+        <ImageView
+            android:id="@+id/imageView101_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="zhangjiajieDocsClick"
+            android:scaleType="fitXY"
+            android:src="@drawable/hotel_101_1" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

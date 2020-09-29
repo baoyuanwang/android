@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.rabbit.lijiang.Lijiang106ScrollingActivity">
+    <item
+        android:id="@+id/action_airline106_1"
+        android:orderInCategory="100"
+        android:title="悦宝宝"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_airline106_2"
+        android:orderInCategory="100"
+        android:title="爸妈和燕子"
+        app:showAsAction="always" />
+</menu>

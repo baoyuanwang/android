@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.rabbit.lijiang.Lijiang101ScrollingActivity">
+    <item
+        android:id="@+id/yuebaobao101"
+        android:orderInCategory="100"
+        android:title="悦宝宝"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/fatherAndMother101"
+        android:orderInCategory="100"
+        android:title="爸妈"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/yanzi101"
+        android:orderInCategory="100"
+        android:title="燕子"
+        app:showAsAction="ifRoom" />
+</menu>

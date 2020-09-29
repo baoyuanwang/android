@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rabbit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/grassland"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/toRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="RelativeLayout" />
+
+            <Button
+                android:id="@+id/toLeanerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LinearLayout" />
+
+            <Button
+                android:id="@+id/toProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="进度条实例" />
+
+            <Button
+                android:id="@+id/toChatButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="微信聊天" />
+
+            <Button
+                android:id="@+id/toFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FrameLayout" />
+
+            <Button
+                android:id="@+id/toSurfaceViewVideoPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toSurfaceViewVideoPlayer"
+                android:text="SurfaceView视频播放" />
+
+            <Button
+                android:id="@+id/toMakePHoneCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toMakePHoneCall"
+                android:text="拨打电话" />
+            <Button
+                android:id="@+id/toSQLiteDB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toSQLiteDB"
+                android:text="SQLITE数据库" />
+            <Button
+                android:id="@+id/toLijiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toLijiang"
+                android:text="我在丽江等你" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_toRightOf="@id/scrollview1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="toBroadCastReceiver"
+                android:text="broadCastReceiver" />
+
+            <Button
+                android:id="@+id/toHandler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toHandler"
+                android:text="Handler" />
+
+            <Button
+                android:id="@+id/toContentProvider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toContentProvider"
+                android:text="ContentProvider" />
+
+            <Button
+                android:id="@+id/toBoundServcie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toBoundServcie"
+                android:text="BoundSerivce" />
+
+            <Button
+                android:id="@+id/toRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toRecyclerView"
+                android:text="RecyclerView" />
+
+            <Button
+                android:id="@+id/toAudioPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toAudioPlayer"
+                android:text="音频播放" />
+
+            <Button
+                android:id="@+id/toVideoPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toVideoPlayer"
+                android:text="视频播放" />
+
+            <Button
+                android:id="@+id/toWebview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toWebview"
+                android:text="Webview" />
+            <Button
+                android:id="@+id/toNetworkTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toNetworkTest"
+                android:text="Network" />
+            <Button
+                android:id="@+id/toAdaptiveCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toAdaptiveCard"
+                android:text="微软AdaptiveCard" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
